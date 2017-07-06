@@ -13,6 +13,11 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['middleware' => ['api']], function() {
+
+Route::get('/user', "HomeController@getUser");
+/*route for value submit*/
+Route::post('/index',"ProjectController@CreateResponse");
+/*route for fetch the response*/
+Route::get('/index/{id}',"ProjectController@getResponse");
 });
