@@ -29,4 +29,25 @@ class ProjectController extends Controller {
 		}
 		return $response;
 	}
+	public function CategoryResponse(Request $request) {
+        // set form validation rules
+
+/*		$this->validate($request, [
+			'proj_taxonomy' => 'required'
+			
+			]);*/
+		$result['proj_taxonomy'] = $request['proj_taxonomy'];
+		
+		
+		if(!empty($request)){
+			$response['bool'] = true;
+			$response['object'] = $result;
+		}  
+		else{
+			$response['bool'] = false;
+			$response['object'] = $result;
+		}
+		return $response;
+	}
+	
 }

@@ -17,3 +17,9 @@ Route::get('/', function () {
 Route::get('/category', function () {
     return view('category');
 });
+Route::get('/navigation', function () {
+    return view('project-header');
+});
+Route::get('/upload', function () {
+    return view('upload');
+});

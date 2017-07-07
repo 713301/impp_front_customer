@@ -14,10 +14,10 @@ use Illuminate\Http\Request;
 */
 
 Route::group(['middleware' => ['api']], function() {
+Route::post('/category',"ProjectController@CategoryResponse");
 
-Route::get('/user', "HomeController@getUser");
 /*route for value submit*/
 Route::post('/index',"ProjectController@CreateResponse");
-/*route for fetch the response*/
-Route::get('/index/{id}',"ProjectController@getResponse");
+
+
 });

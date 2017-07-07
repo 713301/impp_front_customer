@@ -7,10 +7,15 @@ router.map({
     '/category': {
         name: 'category',
         component: require('./components/category.vue')
+    },
+    '/upload': {
+        name: 'upload',
+        component: require('./components/upload.vue')
     }
 
-    
 });
 
 var App = Vue.extend({});
 router.start(App, '#app');
+
+
