@@ -3,16 +3,14 @@
   <h3 class="page-header"></h3>
   <form @submit.prevent="" id="project_desc" enctype="multipart/form-data" action="#" method="post">
     <div class="row">
-      <div class="col s11 m11 float auto">
+      <div class="col s11 m12 float auto">
         <div class="card white project-basic no-shadow">
           <div class="card-title primary-light-blue form-title primary-dark-text bold">
             Step 1 - Basic project details
           </div>
-        </div>
-      </div>
-    </div>
+         
     <div class="card-panel no-shadow margin-top-off">
-      <div class="row margin-bottom-off">
+      <div class="">
         <div class="row">
           <div class="col s12 m12 relative">
             <label class="label-title primary-black-text">Describe Project
@@ -104,9 +102,11 @@
       <div class="col s12 m12">
         <div class="row margin-top-x margin-bottom-off">
           <div class="col s12 m12">
+          
             <button type="submit" value="create_basic" class="waves-effect waves-light btn blue darken-4 bold right action" @click="createResponse" >
               <i class="material-icons right">input</i> Save and next
             </button>
+       
           </div>
         </div>
       </div>
@@ -137,7 +137,8 @@
       };
     },
     ready: function() {
-
+     
+      
     },
     methods:{
      createResponse: function(){
