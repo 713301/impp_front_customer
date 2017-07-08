@@ -43,34 +43,86 @@
 						</div>
 					</div>
 
-					<div class="row">
-						<div class="col s12 m12 padding-x thin-border category-selection-row">
-							<div class="col s12 m2">
-
-							</div>
-							<div class="col s12 m9 offset-m1">
-								<h4 class="bolder secondary-dark-text margin-top-x">Unsure which project type?</h4>
-								<div class="col s12 m12 input-sub-category margin-top-x no-padding">
-									<ul>
-										<li class="margin-right-x left">
-											<input name="proj_subtype" type="radio" />
-											<label for="skip-step" class="bolder border-dark grey-dark-text case-capital"> Skip this step </label>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div> 
-				</section>
-				<div class="row margin-top-x margin-bottom-off">
-					<div class="col s12 m12">
-						<button type="submit" name="category_draft_next" value="category_draft_next" class="waves-effect waves-light btn blue darken-4 bold right" @click="createResponse">
-							<i class="material-icons right">input</i>
-							Save and next
-						</button>
-						
-					</div>
-				</div>
+					<div class="card-panel no-shadow margin-top-off clear">
+                    <h6 class="deep-orange-text text-darken-1 bold margin-top-off">Select a project type best suits your requirements or start from scratch. </h6>
+                    
+                    <section class="category-selection-wrapper margin-top-2x" id="category-details">
+                        
+                        <div class="row">
+                            <div class="col s12 m12 padding-x thin-border category-selection-row">
+                                <div class="col s12 m2">
+                                   
+                                   
+                                    <img src="{{ $base64 }}" class="full-width">
+                                </div>
+                                <div class="col s12 m9 offset-m1">
+                                    <h4 class="bolder secondary-dark-text margin-top-x"></h4>
+                                    <div class="col s12 m12 input-sub-category no-padding">
+                                        
+                                            
+                                            <li class="margin-right-x left margin-bottom-2x">
+                                              
+                                                        
+                                                        
+                                                        <label for="" class="bold grey-dark-text border-dark"></label>
+                                                <input value="" name="csvfilecode" type="hidden"/>
+                                            </li>
+                                         
+                                        </ul>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                        <input type="hidden" name="selected-csv-code" value="{{$draft_details_arr->csvfilecode}}">
+                     
+                        <input type="hidden" name="selected-csv-code" value="">
+                       
+                        
+                        
+                        <div class="row">
+                            <div class="col s12 m12 padding-x thin-border category-selection-row">
+                                <div class="col s12 m2">
+                                    
+                                    <img src="" class="full-width">
+                                </div>
+                                <div class="col s12 m9 offset-m1">
+                                    <h4 class="bolder secondary-dark-text margin-top-x">Unsure which project type?</h4>
+                                    <div class="col s12 m12 input-sub-category margin-top-x no-padding">
+                                        <ul>
+                                            <li class="margin-right-x left">
+                                                <input onClick="insert_image_val('' , 'You have skiped, No category selected');" name="proj_subtype" type="radio" />
+                                                       <label for="skip-step" class="bolder border-dark grey-dark-text case-capital"> Skip this step </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </section>
+                    </div>
+				 <div class="row margin-bottom-off">
+      <div class="col s12 m12">
+        <div class="row margin-top-x ">
+          <div class="col s12 m12">
+          
+            <div class="row margin-top-x margin-bottom-off">
+                        <div class="col s12 m12">
+                            <button type="submit" name="category_draft_next" value="category_draft_next" class="waves-effect waves-light btn blue darken-4 bold right" @click="createResponse">
+                                <i class="material-icons right">input</i>
+                                Save and next
+                            </button>
+                            <button type="submit" name="category_draft" value="category_draft" class="margin-right-2x waves-effect waves-light btn right yellow darken-2 bold">
+                                <i class="material-icons right">save</i>
+                                Save and Exit
+                            </button>
+                        </div>
+                    </div>
+          </div>
+        </div>
+      </div>
+    </div>
 			</article>
 		</div>
 	</section>

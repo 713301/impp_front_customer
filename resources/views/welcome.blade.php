@@ -95,8 +95,8 @@
             <a href="http://localhost/impp_vue_l5/public/view/projects" class="subheader primary-blue-text side-nav-style side-div collapsible-style"> <i class="material-icons relative secondary-dark-text">filter_drama</i> <span class="sidenav-color"> <b>MY PROJECTS </b> </span> <i class="material-icons right">keyboard_arrow_down</i></a>
           </div>
           <div class="collapsible-body">
-            <a href="http://localhost/impp_vue_l5/public/projects/draft" class="block float secondary-dark-text clear margin-left-5x">MANAGE PROJECTS</a>
-            <a href="http://localhost/impp_vue_l5/public/project/basic" class="block float secondary-dark-text clear margin-left-5x">NEW PROJECT</a>
+            <a href="" class="block float secondary-dark-text clear margin-left-5x">MANAGE PROJECTS</a>
+            <a href="" class="block float secondary-dark-text clear margin-left-5x">NEW PROJECT</a>
 
           </div>
         </li>
@@ -165,8 +165,6 @@
     </section>
   </header>
   <div id="app" class="flex-center position-ref full-height container">
-
-
     <div class="content">
       <router-view></router-view>
     </div>

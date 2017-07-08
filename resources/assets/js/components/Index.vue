@@ -100,12 +100,21 @@
     </div>
     <div class="row margin-bottom-off">
       <div class="col s12 m12">
-        <div class="row margin-top-x margin-bottom-off">
+        <div class="row margin-top-x ">
           <div class="col s12 m12">
           
-            <button type="submit" value="create_basic" class="waves-effect waves-light btn blue darken-4 bold right action" @click="createResponse" >
-              <i class="material-icons right">input</i> Save and next
-            </button>
+            <div class="row margin-top-x margin-bottom-off">
+                        <div class="col s12 m12">
+                            <button type="submit" name="category_draft_next" value="category_draft_next" class="waves-effect waves-light btn blue darken-4 bold right" @click="createResponse">
+                                <i class="material-icons right">input</i>
+                                Save and next
+                            </button>
+                            <button type="submit" name="category_draft" value="category_draft" class="margin-right-2x waves-effect waves-light btn right yellow darken-2 bold">
+                                <i class="material-icons right">save</i>
+                                Save and Exit
+                            </button>
+                        </div>
+                    </div>
        
           </div>
         </div>
